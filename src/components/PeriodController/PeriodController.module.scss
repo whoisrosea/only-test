@@ -1,0 +1,52 @@
+.controller {
+  position: absolute;
+  bottom: 211px;
+  left: 80px;
+  display: grid;
+  grid-template-rows: max-content max-content;
+  gap: 20px;
+  text-align: left;
+  @media only screen and (max-width: 767px) {
+    gap: 10px;
+    bottom: 13px;
+    left: 20px;
+  }
+
+  &__counter {
+    font: var(--typo-h6);
+  }
+  &__buttonLeft,
+  &__buttonRight {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--blue-6);
+    background-color: var(--white-1);
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:disabled {
+      filter: opacity(50%);
+      cursor: not-allowed;
+    }
+    @media only screen and (max-width: 767px) {
+      height: 25px;
+      width: 25px;
+      background-size: 6.25px;
+    }
+  }
+  &__buttonLeft {
+    background-image: url("./arrowLeft.svg");
+  }
+  &__buttonRight {
+    background-image: url("./arrowRight.svg");
+  }
+  &__actions {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 20px;
+    @media only screen and (max-width: 767px) {
+      gap: 8px;
+    }
+  }
+}

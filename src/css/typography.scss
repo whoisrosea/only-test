@@ -1,0 +1,43 @@
+:root {
+  /* H1 */
+  --font-size-h1: 56px;
+  --line-height-h1: 67.2px;
+
+  /* H2 TODO another font*/
+  --font-size-h2: 25px;
+  --line-height-h2: 30px;
+
+  /* H3 */
+  --font-size-h3: 20px;
+  --line-height-h3: 30px;
+
+  /* H4 */
+  --font-size-h4: 200px;
+  --line-height-h4: 160px;
+
+  /* H5 */
+  --font-size-h5: 20px;
+  --line-height-h5: 30px;
+
+  /* H6 */
+  --font-size-h6: 14px;
+  --line-height-h6: 18px;
+
+  /* H7 */
+  --font-size-h7: 20px;
+  --line-height-h7: 24px;
+
+  /* H8 */
+  --font-size-h8: 56px;
+  --line-height-h8: 72px;
+
+  /* Typography */
+  --typo-h1: 900 var(--font-size-h1) / var(--line-height-h1) var(--font-family);
+  --typo-h2: 400 var(--font-size-h2) / var(--line-height-h2) var(--font-family);
+  --typo-h3: 400 var(--font-size-h3) / var(--line-height-h3) var(--font-family);
+  --typo-h4: 700 var(--font-size-h4) / var(--line-height-h4) var(--font-family);
+  --typo-h5: 700 var(--font-size-h5) / var(--line-height-h5) var(--font-family);
+  --typo-h6: 400 var(--font-size-h6) / var(--line-height-h6) var(--font-family);
+  --typo-h7: 700 var(--font-size-h7) / var(--line-height-h7) var(--font-family);
+  --typo-h8: 700 var(--font-size-h8) / var(--line-height-h8) var(--font-family);
+}

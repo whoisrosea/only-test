@@ -1,0 +1,37 @@
+@use "./css/mixins.scss";
+
+.app {
+  position: relative;
+  text-align: center;
+  backgrounwd-color: black;
+  height: 100vh;
+  @media only screen and (min-width: 768px) {
+    @include mixins.container;
+    background: linear-gradient(to right, var(--blue-2) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--blue-2) 1px, transparent 1px);
+    background-size: 2px 100%, 100% 2px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-left: 1px solid var(--blue-2);
+    border-right: 1px solid var(--blue-2);
+  }
+
+  &__title {
+    text-align: left;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    padding-left: 78px;
+    color: var(--blue-1);
+    font: var(--typo-h1);
+    border-left: 5px solid;
+    border-image-source: linear-gradient(180deg, #3877ee -5%, #ef5da8 85%);
+    border-image-slice: 1;
+    @media only screen and (max-width: 767px) {
+      border: none;
+      top: 60px;
+      padding-left: 20px;
+      font: var(--typo-h7);
+    }
+  }
+}

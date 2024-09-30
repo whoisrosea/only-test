@@ -1,0 +1,28 @@
+.section {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 90px;
+  user-select: none;
+  font: var(--typo-h4);
+
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    gap: unset;
+    justify-content: space-between;
+    top: 163px;
+    font: var(--typo-h8);
+    transform: translateX(-50%);
+  }
+  &__end {
+    color: var(--pink-1);
+  }
+  &__start {
+    color: var(--purple-1);
+  }
+}

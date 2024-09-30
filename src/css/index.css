@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import "./colors.css";
+@import "./mixins.scss";
+@import "./reset.scss";
+@import "./typography.scss";
+
+:root  {
+  --font-family: "PT Sans", sans-serif;
+}
